@@ -1,30 +1,31 @@
 {
-  "name": "indica-vizinho",
+  "name": "vizinho-indica",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "run:android": "expo run:android",
+    "run:ios": "expo run:ios",
+    "lint": "npx expo-doctor",
+    "build:export": "expo export --platform all --output-dir dist",
+    "test": "echo \"No automated tests configured\""
   },
   "dependencies": {
-    "autoprefixer": "^10.5.4",
-    "canvas-confetti": "^1.9.4",
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.31.0",
-    "postcss": "^8.5.26",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "tailwind-merge": "^3.6.0",
-    "tailwindcss": "^3.4.19"
-  },
-  "devDependencies": {
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.4",
-    "oxlint": "^1.75.0",
-    "vite": "^8.2.0"
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-navigation/bottom-tabs": "^7.8.1",
+    "@react-navigation/native": "^7.1.21",
+    "@react-navigation/native-stack": "^7.3.29",
+    "expo": "~57.0.14",
+    "expo-font": "~57.0.1",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.2",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0"
   }
 }

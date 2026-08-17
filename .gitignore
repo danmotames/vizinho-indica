@@ -8,8 +8,10 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.expo
+.expo-shared
 dist
-dist-ssr
+web-build
 *.local
 
 # Editor directories and files
